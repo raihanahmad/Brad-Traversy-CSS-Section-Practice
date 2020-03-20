@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float & Align</title>
+    <style>
+        /* CSS reset */
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6rem;
+        }
+
+        /* class selector */
+        .box {
+            border: solid 3px gray;
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: lightgray;
+        }
+        .box p {
+            margin-top: 10px;
+            text-align: left;
+            text-align: center;
+            text-align: right;
+            text-align: justify;
+        }
+        .clr {
+            clear: both;
+        }
+
+        /* IDs selector */
+        #container{
+            max-width: 900px;
+            margin: 20px auto;
+        }
+
+        #box-2 {
+            float: left;
+            width: 68%;
+        }
+
+        #box-3 {
+            float: right;
+            width: 30%;
+        }
+
+    </style>
+</head>
+
+<body>
+        <div id="container">
+            <div id="box-1" class="box">
+                <h3>Raihan Ahmad</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis eius nobis, sit ipsum ut quia perferendis neque similique at quaerat!</p>
+            </div>
+            <div id="box-2" class="box">
+                <h3>Nasim Uddin</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis eius nobis, sit ipsum ut quia perferendis neque similique at quaerat!</p>
+            </div>
+            <div id="box-3" class="box">
+                <h3>Polash Ahmad</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis eius nobis, sit ipsum ut quia perferendis neque similique at quaerat!</p>
+            </div>
+
+            <div class="clr"></div>
+            <div id="box-4" class="box">
+                <h3>Unknown Person</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis eius nobis, sit ipsum ut quia perferendis neque similique at quaerat!</p>
+            </div>
+        </div>
+</body>
+</html>
